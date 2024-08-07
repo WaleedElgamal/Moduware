@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Moduware</string>
+    <string name="supported_devices">Supported Devices</string>
+    <string name="connected_device">Connected Device</string>
+    <string name="biovotion">Biovotion Everion</string>
+    <string name="core">Core</string>
+    <string name="core2">Core</string>
+    <string name="button_description" />
+    <string name="button_text" />
+    <string name="activity">Activity</string>
+    <string name="readings">Readings</string>
+    <string name="no_supported_plugins">No wearable devices are currently supported</string>
+    <string name="select_plugin">Select a device to start scanning</string>
+    <string name="scan">Scan Devices</string>
+    <string name="scanning">Scanning...</string>
+    <string name="exportHistory">Export History</string>
+    <string name="exportStream">Export Stream</string>
+    <string name="disconnect">Disconnect</string>
+    <string name="device_status">Status</string>
+</resources>
