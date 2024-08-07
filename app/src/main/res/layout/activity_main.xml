@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/blue_primary"
+        android:popupTheme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/app_name"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+<!--    <androidx.appcompat.widget.Toolbar-->
+<!--        android:id="@+id/supported_devices_toolbar"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="33dp"-->
+<!--        android:layout_marginBottom="612dp"-->
+<!--        android:background="@color/light_blue"-->
+<!--        android:popupTheme="@style/AppTheme"-->
+<!--        android:theme="@style/AppTheme"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/toolbar"-->
+<!--        app:layout_constraintVertical_bias="0.0">-->
+<!--        -->
+<!--    </androidx.appcompat.widget.Toolbar>-->
+
+    <TextView
+        android:id="@+id/supported_devices_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_marginTop="16dp"
+        android:text="@string/supported_devices"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.066"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/supported_devices_cardView"
+        android:layout_width="380dp"
+        android:layout_height="114dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        app:cardCornerRadius="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/supported_devices_title">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/toolbar"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            tools:layout_editor_absoluteX="142dp"
+            tools:layout_editor_absoluteY="140dp" />
+    </androidx.cardview.widget.CardView>
+
+<!--    <androidx.appcompat.widget.Toolbar-->
+<!--        android:id="@+id/activity_toolbar"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="33dp"-->
+<!--        android:layout_marginBottom="444dp"-->
+<!--        android:background="@color/light_blue"-->
+<!--        android:popupTheme="@style/AppTheme"-->
+<!--        android:theme="@style/AppTheme"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/supported_devices_cardView"-->
+<!--        app:layout_constraintVertical_bias="0.36">-->
+
+
+<!--    </androidx.appcompat.widget.Toolbar>-->
+
+
+    <TextView
+        android:id="@+id/activity_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:text="@string/activity"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.045"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/supported_devices_cardView"
+        app:layout_constraintVertical_bias="0.066" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/scanned_devices_cardView"
+        android:layout_width="380dp"
+        android:layout_height="390dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="-90dp"
+        android:layout_marginEnd="16dp"
+        app:cardCornerRadius="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/activity_title">
+
+        <TextView
+            android:id="@+id/pre_scan_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center" />
+
+        <ListView
+            android:id="@+id/deviceListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/activity_toolbar"
+            app:layout_constraintVertical_bias="0.263" />
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/scanButton"
+        style="@android:style/TextAppearance.DeviceDefault.Widget.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:backgroundTint="@color/blue_primary"
+        android:clickable="true"
+        android:enabled="true"
+        android:focusable="true"
+        android:text="@string/scan"
+        android:textColor="@color/white"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scanned_devices_cardView"
+        app:layout_constraintVertical_bias="0.846" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
