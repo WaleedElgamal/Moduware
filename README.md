@@ -1,6 +1,6 @@
 # Moduware
-<img src="Home_Screen.png"  width="49%" />
-<img src="Sensor_Connected.png" width="49%" />
+<img src="Home_Screen.png"  width="30%" />
+<img src="Sensor_Connected.png" width="30%" />
 
 
 ## Description
@@ -27,7 +27,7 @@ Before you proceed, make sure you have the following installed:
 - Open a terminal window (or command prompt) and navigate to the directory where you want to clone the project.
 - Run the following command to clone the repository:
 ```
-git clone https://github.com/your-username/your-repo-name.git
+git clone https://legolas.bmt.uni-ulm.de/bmt/students/waleedelgamal/modular.git
 ```
 
 ##### 2. Open the Project in Android Studio:
@@ -56,7 +56,7 @@ git clone https://github.com/your-username/your-repo-name.git
 - In the Version control field, select Git.
 - Paste the URL of the GitHub repository:
 ```
-https://github.com/your-username/your-repo-name.git
+https://legolas.bmt.uni-ulm.de/bmt/students/waleedelgamal/modular.git
 ```
 - Choose the directory where you want to store the project on your local machine.
 - Click Clone.
