@@ -1,93 +1,105 @@
-# Modular
+# Moduware
+<img src="Home_Screen.png"  width="49%" />
+<img src="Sensor_Connected.png" width="49%" />
 
-
-
-## Getting started
-
-To make it easy for you to get started with GitLab, here's a list of recommended next steps.
-
-Already a pro? Just edit this README.md and make it your own. Want to make it easy? [Use the template at the bottom](#editing-this-readme)!
-
-## Add your files
-
-- [ ] [Create](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#create-a-file) or [upload](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#upload-a-file) files
-- [ ] [Add files using the command line](https://docs.gitlab.com/ee/gitlab-basics/add-file.html#add-a-file-using-the-command-line) or push an existing Git repository with the following command:
-
-```
-cd existing_repo
-git remote add origin https://legolas.bmt.uni-ulm.de/bmt/students/waleedelgamal/modular.git
-git branch -M main
-git push -uf origin main
-```
-
-## Integrate with your tools
-
-- [ ] [Set up project integrations](https://legolas.bmt.uni-ulm.de/bmt/students/waleedelgamal/modular/-/settings/integrations)
-
-## Collaborate with your team
-
-- [ ] [Invite team members and collaborators](https://docs.gitlab.com/ee/user/project/members/)
-- [ ] [Create a new merge request](https://docs.gitlab.com/ee/user/project/merge_requests/creating_merge_requests.html)
-- [ ] [Automatically close issues from merge requests](https://docs.gitlab.com/ee/user/project/issues/managing_issues.html#closing-issues-automatically)
-- [ ] [Enable merge request approvals](https://docs.gitlab.com/ee/user/project/merge_requests/approvals/)
-- [ ] [Set auto-merge](https://docs.gitlab.com/ee/user/project/merge_requests/merge_when_pipeline_succeeds.html)
-
-## Test and Deploy
-
-Use the built-in continuous integration in GitLab.
-
-- [ ] [Get started with GitLab CI/CD](https://docs.gitlab.com/ee/ci/quick_start/index.html)
-- [ ] [Analyze your code for known vulnerabilities with Static Application Security Testing (SAST)](https://docs.gitlab.com/ee/user/application_security/sast/)
-- [ ] [Deploy to Kubernetes, Amazon EC2, or Amazon ECS using Auto Deploy](https://docs.gitlab.com/ee/topics/autodevops/requirements.html)
-- [ ] [Use pull-based deployments for improved Kubernetes management](https://docs.gitlab.com/ee/user/clusters/agent/)
-- [ ] [Set up protected environments](https://docs.gitlab.com/ee/ci/environments/protected_environments.html)
-
-***
-
-# Editing this README
-
-When you're ready to make this README your own, just edit this file and use the handy template below (or feel free to structure it however you want - this is just a starting point!). Thanks to [makeareadme.com](https://www.makeareadme.com/) for this template.
-
-## Suggestions for a good README
-
-Every project is different, so consider which of these sections apply to yours. The sections used in the template are suggestions for most open source projects. Also keep in mind that while a README can be too long and detailed, too long is better than too short. If you think your README is too long, consider utilizing another form of documentation rather than cutting out information.
-
-## Name
-Choose a self-explaining name for your project.
 
 ## Description
-Let people know what your project can do specifically. Provide context and add a link to any reference visitors might be unfamiliar with. A list of Features or a Background subsection can also be added here. If there are alternatives to your project, this is a good place to list differentiating factors.
+A middleware solution for wearble sensors interface management. It supports multi-sensor connectivity in a centralized app with parallel data stream processing. Its modular design allows for easy integration of new sensors.
 
-## Badges
-On some READMEs, you may see small images that convey metadata, such as whether or not all the tests are passing for the project. You can use Shields to add some to your README. Many services also have instructions for adding a badge.
-
-## Visuals
-Depending on what you are making, it can be a good idea to include screenshots or even a video (you'll frequently see GIFs rather than actual videos). Tools like ttygif can help, but check out Asciinema for a more sophisticated method.
 
 ## Installation
-Within a particular ecosystem, there may be a common way of installing things, such as using Yarn, NuGet, or Homebrew. However, consider the possibility that whoever is reading your README is a novice and would like more guidance. Listing specific steps helps remove ambiguity and gets people to using your project as quickly as possible. If it only runs in a specific context like a particular programming language version or operating system or has dependencies that have to be installed manually, also add a Requirements subsection.
+### Prerequisites
+Before you proceed, make sure you have the following installed:
+
+- Java Development Kit (JDK): Ensure you have JDK 8 or later installed. You can download it from here.
+
+- Android Studio: The latest version of Android Studio should be installed.
+
+- Android SDK: Android Studio should be set up with the Android SDK for Android 7.0 (API 24) or later.
+
+### Steps to Clone and Run the Project
+
+#### Option 1:  Clone the Repository via Command Line
+
+##### 1. Clone the Repository:
+
+
+- Open a terminal window (or command prompt) and navigate to the directory where you want to clone the project.
+- Run the following command to clone the repository:
+```
+git clone https://github.com/your-username/your-repo-name.git
+```
+
+##### 2. Open the Project in Android Studio:
+- Open Android Studio.
+- Click on File > Open... and navigate to the directory where you cloned the repository.
+- Select the project and click OK.
+
+
+##### 3. Sync Gradle:
+- Once the project is loaded, Android Studio should automatically prompt you to sync the Gradle files. If not, click on the Sync Project with Gradle Files button in the toolbar.
+- Wait for the sync process to complete. This will download all the required dependencies.
+
+
+##### 4. Build and Run the Project:
+- Build the project by clicking on Build > Build Project in the top menu.
+- To run the project on an emulator or a physical device, click on the green Run button in the toolbar or select Run > Run 'app'.
+- Choose your target device and click OK.
+
+#### Option 2:  Clone the Repository  Directly from Android Studio
+
+##### 1. Open Android Studio
+- Start Android Studio
+
+##### 2. Clone the Repository:
+- From the Welcome to Android Studio screen, select Get from VCS (Version Control).
+- In the Version control field, select Git.
+- Paste the URL of the GitHub repository:
+```
+https://github.com/your-username/your-repo-name.git
+```
+- Choose the directory where you want to store the project on your local machine.
+- Click Clone.
+
+
+##### 3. Open the Project:
+- Once the cloning process is complete, Android Studio will automatically open the project.
+- If prompted, click Yes to open the project.
+
+
+##### 4. Sync Gradle:
+- Android Studio will prompt you to sync the Gradle files. Click on Sync Project with Gradle Files in the toolbar if it doesn't sync automatically.
+- Wait for the sync process to complete.
+
+
+##### 5. Build and Run the Project:
+- Build the project by clicking on Build > Build Project in the top menu.
+- To run the project on an emulator or a physical device, click on the green Run button in the toolbar or select Run > Run 'app'.
+- Choose your target device and click OK.
+
+### Supported Android Versions
+The app is compatible with Android 7.0 (API 24) and above.
 
 ## Usage
-Use examples liberally, and show the expected output if you can. It's helpful to have inline the smallest example of usage that you can demonstrate, while providing links to more sophisticated examples if they are too long to reasonably include in the README.
+The current supported sensor is the [CORE Body Temperature Sensor](https://corebodytemp.com). Once you run the project, you will be able to connect to any CORE sensor using the app. 
 
-## Support
-Tell people where they can go to for help. It can be any combination of an issue tracker, a chat room, an email address, etc.
+The app will specifically scan for the chosen device type, and once connected, a new page will be displayed containing all the sensor information. The sensor name, MAC address and battery level are shown. Moreover, all the supported vital readings will be displayed including; the measurement type, the value and the unit. In addition, the timestamp of the latest received data is displayed. The data stream is stored on the phone's local storage.
 
-## Roadmap
-If you have ideas for releases in the future, it is a good idea to list them in the README.
+Two buttons are available at the bottom of the screen for exporting the history data, as well as, the stream data to a CSV file.
+
+In case new sensors are integrated, the user can connect to multiple sensors at the same time and have the data processed concurrently. Sensor connectivity is also maintained while the app runs in the background.
 
 ## Contributing
-State if you are open to contributions and what your requirements are for accepting them.
+To modify or update the existing code, a fork can be made of the repository.
 
-For people who want to make changes to your project, it's helpful to have some documentation on how to get started. Perhaps there is a script that they should run or some environment variables that they need to set. Make these steps explicit. These instructions could also be useful to your future self.
-
-You can also document commands to lint the code or run tests. These steps help to ensure high code quality and reduce the likelihood that the changes inadvertently break something. Having instructions for running tests is especially helpful if it requires external setup, such as starting a Selenium server for testing in a browser.
+To integrate a new sensor, a Plugin needs to be developed for that sensor. A plugin is made up of three components: a PluginService class, a GattCallback class and a Parser class. 
+Follow the existing code for the CORE plugin to implement a new plugin. A class diagram can be found in the thesis report.
 
 ## Authors and acknowledgment
-Show your appreciation to those who have contributed to the project.
+Moduware was created by **[Waleed Elgamal](https://github.com/WaleedElgamal)** as a bachelor project conducted at Ulm University under the supervision of **[Prof. Dr. Walter Karlen](https://www.uni-ulm.de/in/bmt/institut/team/prof-walter-karlen/)**.
 
 ## License
-For open source projects, say how it is licensed.
+This project is licensed under the GNU General Public License v3.0 - see the [LICENSE](LICENSE) file for details.
 
 ## Project status
-If you have run out of energy or time for your project, put a note at the top of the README saying that development has slowed down or stopped completely. Someone may choose to fork your project or volunteer to step in as a maintainer or owner, allowing your project to keep going. You can also make an explicit request for maintainers.
+As of August 2024, development was discontinued as the thesis came to an end. Future work may be done.
