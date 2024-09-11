@@ -1,6 +1,5 @@
 # Moduware
-<img src="Home_Screen.png"  width="30%" />
-<img src="Sensor_Connected.png" width="30%" />
+<img src="Home_Screen.png"  width="30%" /> <img src="Sensor_Connected.png" width="30%" />
 
 
 ## Description
